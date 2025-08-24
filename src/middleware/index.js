@@ -13,7 +13,7 @@ appMiddleware.use(
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
 );
-appMiddleware.options("*", cors());
+// appMiddleware.options("*", cors());
 appMiddleware.use(express.json());
 appMiddleware.use(fileUpload());
 appMiddleware.use(express.static("public"));
